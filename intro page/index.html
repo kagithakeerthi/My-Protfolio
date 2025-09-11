@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link  rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
     <h1>Welcome to My Portfolio</h1>
-    <a href=""><button>About</button></a>
-    <a href=""><button>Skills</button></a>
-    <a href=""><button>Projects</button></a>
-    <a href=""><button>Contact</button></a>
+    <a href=""><button class="button">About</button></a>
+    <a href=""><button class="button">Skills</button></a>
+    <a href=""><button class="button">Projects</button></a>
+    <a href=""><button class="button">Contact</button></a>
     </header>
     
 <main>
-   <section id="about"></section>
+   <section id="about">
     <h1>Kagitha Keerthi</h1>
     <img src="myimage1.jpg" alt="image">
     <p>I am <em>Kagitha Keerthi</em>, a passionate Computer Science Engineering student specializing in Data Science.</p>
@@ -63,6 +64,7 @@
      <form>
        <label for="name">Name:</label>
        <input id="name" placeholder="enter name" type="text">
+       <br>
        <label for="email">Email:</label>
        <input id="email" placeholder="enter email" type="email">
        <br>
@@ -77,12 +79,18 @@
        <input id="coding" type="checkbox" value="coding">
        <label for="learning">Learning</label>
        <input id="learning" type="checkbox" value="checkbox">
+       <br>
+       <label for="bio">Bio (up to 200 characters):</label>
+       <input id="bio">
+       <br><br>
+       <button type="submit" class="submit">Submit</button>
     </form>
    </section>
 
 </main>
+<button class="fixedbutton">Top</button>
 <footer>
-    <p>2025 my protfolio</p>
+    <p>@2025 my protfolio</p>
 </footer>
 </body>
 </html>
